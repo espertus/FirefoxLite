@@ -22,8 +22,8 @@ public class ColorUtils {
         final int red = Color.red(color);
         final int green = Color.green(color);
         final int blue = Color.blue(color);
-        // Magic weighting taken from a stackoverflow post, supposedly related to how
-        // humans perceive color.
+        // Magic weighting taken from https://stackoverflow.com/a/51571053/631051, 
+        // supposedly related to how humans perceive color.
         return (int) (0.299 * red + 0.587 * green + 0.114 * blue);
     }
 }
